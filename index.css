@@ -1,0 +1,253 @@
+
+*{
+border: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.logo1{
+    margin-left: 20px;
+}
+.list1{
+    color: green;
+    font-size: 32px;
+    padding: 20px;
+    margin-right: 10px;
+    }
+.list1 i{
+        color: green;
+    }
+    nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 50;
+      }
+.navi{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+
+main{
+    margin-top: 20px;
+}
+
+/* Hero Part */
+    .heroimg img {
+        padding: 20px;
+        max-width: 450px;
+        /* width: 80vw; */
+        margin-bottom: 20px;
+        
+    }
+
+.herotext{
+    margin :20px;
+    /* max-width: 300px; */
+}
+.herotext h4 ,#ourmenu{
+background-color: green;
+display: inline;
+padding: 10px;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.herotext h1 {
+padding: 10px;
+margin-top: 10px;
+font-size: 80px;
+}
+.herotext p {
+    font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    /* font-size: 20px; */
+}
+.herotext button{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: green;
+    margin-left: 10px;
+}
+.herotext button a{
+    color: black;
+text-decoration: none;
+}
+
+.hero{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+
+/* Feature Part */
+.featurebox{
+    width: 200px;
+    /* min-height: 250px; */
+    padding: 20px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-grow: 1;
+
+}
+.featureboximg img{
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.featureboxtext{
+    line-height: 1.2;
+    align-items: end;
+}
+.feature{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    border-bottom: 4px solid rgb(226, 219, 219);
+}
+
+/* Menu Part */
+.menu h4{
+    /* display: block; */
+    text-align: center;
+    margin: 0 auto;
+    /* margin-bottom: 40px; */
+}
+.menu h4 , .menu h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.menuimg img{
+    width: 100%;
+    height: 100%;
+    
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+.menuimg{
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+            "I1 I1 I2 I3"
+            "I1 I1 I2 I7"
+            "I4 I5 I6 I7";
+}
+.menu{
+    margin-bottom: 60px;
+}
+
+
+/*  nav bar*/
+
+footer{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 200px;
+}
+
+.footercontainer h3{
+    margin-bottom: 20px;
+    color: rgb(133, 128, 128);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footercontainer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+
+}
+.footercontainer input{
+    height: 30px;
+    border: 1px solid black;
+    width: 250px;
+    text-align: center;
+}
+
+.icon i{
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 786px){
+    .hero{
+        display: flexbox;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+ .heroimg{
+    text-align: center;
+ }
+    .heroimg img {
+        
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .herotext h1 {
+        font-size: 30px;
+        }
+        .feature{
+            /* width: 100vw; */
+            /* min-height: 250px; */
+            padding: 20px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            /* flex-grow: 1; */
+            
+        
+        }
+        .featurebox{
+            width: 100vw;
+            flex-direction: column;
+        }
+        footer{
+            flex-direction: column;
+            /* justify-content: space-between; */
+            
+        }
+        .footercontainer{
+            padding-bottom: 20px;
+            margin-left: 20px;
+        }
+}
